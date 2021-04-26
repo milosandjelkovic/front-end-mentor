@@ -1,0 +1,97 @@
+/* Google Fonts import */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    height: 100%;
+    --title-font: "Big Shoulders Display", Arial, Helvetica, sans-serif;
+    --body-copy-font: "Lexend Deca";
+    --body-copy-color: hsla(0, 0%, 100%, 0.75);
+    --body-bg_headings-cl_buttons-cl: hsl(0, 0%, 95%);
+    --sedans-bg_sedans-btn-txt: #e28525;
+    --suvs-bg_suvs-btn-txt: #016972;
+    --luxury-bg_luxury-btn-txt: #00403f;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    background: var(--body-bg_headings-cl_buttons-cl);
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+}
+
+.sedans, .suvs, .luxury {
+    padding: 3em;
+    min-height: 300px;
+}
+
+.sedans {
+    background: var(--sedans-bg_sedans-btn-txt);
+    border-radius: 8px 0 0 8px;
+}
+
+.suvs {
+    background: var(--suvs-bg_suvs-btn-txt);
+}
+
+.luxury {
+    background: var(--luxury-bg_luxury-btn-txt);
+    border-radius: 0 8px 8px 0;
+}
+
+.sedans__title, .suvs__title, .luxury__title {
+    margin: 1.3125em 0;
+    font-family: var(--title-font);
+    font-size: 2em;
+    font-weight: 800;
+    color: var(--body-bg_headings-cl_buttons-cl);
+    text-transform: uppercase;
+}
+
+.sedans__pf, .suvs__pf, .luxury__pf {
+    font-family: var(--body-copy-font);
+    font-size: 0.9375em;
+    line-height: 1.6em;
+    font-weight: 400;
+    color: var(--body-copy-color);
+}
+
+.sedans__btn, .suvs__btn, .luxury__btn {
+    margin-top: 5.525em;
+    width: 9.25em;
+    height: 3em;
+    background: var(--body-bg_headings-cl_buttons-cl);
+    border: none;
+    border-radius: 1.5em;
+}
+
+.sedans__btn {
+    color: var(--sedans-bg_sedans-btn-txt);
+}
+
+.suvs__btn {
+    color: var(--suvs-bg_suvs-btn-txt);
+}
+
+.luxury__btn {
+    color: var(--luxury-bg_luxury-btn-txt);
+}
+
+@media (min-width: 375px){
+    main {
+        flex-direction: row;
+        width: 61.3em;
+    }
+
+}
