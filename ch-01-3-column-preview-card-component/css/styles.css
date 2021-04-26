@@ -29,6 +29,7 @@ body {
 main {
     display: flex;
     flex-direction: column;
+    width: 90%;
 }
 
 .sedans, .suvs, .luxury {
@@ -38,7 +39,7 @@ main {
 
 .sedans {
     background: var(--sedans-bg_sedans-btn-txt);
-    border-radius: 8px 0 0 8px;
+    border-radius: 8px 8px 0 0;
 }
 
 .suvs {
@@ -47,7 +48,7 @@ main {
 
 .luxury {
     background: var(--luxury-bg_luxury-btn-txt);
-    border-radius: 0 8px 8px 0;
+    border-radius: 0 0 8px 8px;
 }
 
 .sedans__title, .suvs__title, .luxury__title {
@@ -88,10 +89,42 @@ main {
     color: var(--luxury-bg_luxury-btn-txt);
 }
 
+.sedans__btn:hover {
+    border: 2px solid var(--body-bg_headings-cl_buttons-cl);
+    background: var(--sedans-bg_sedans-btn-txt);
+    color: var(--body-bg_headings-cl_buttons-cl);
+    cursor: pointer;
+    transition: background-color .7s;
+}
+
+.suvs__btn:hover {
+    border: 2px solid var(--body-bg_headings-cl_buttons-cl);
+    background: var(--suvs-bg_suvs-btn-txt);
+    color: var(--body-bg_headings-cl_buttons-cl);
+    cursor: pointer;
+    transition: background-color .7s;
+}
+
+.luxury__btn:hover {
+    border: 2px solid var(--body-bg_headings-cl_buttons-cl);
+    background: var(--luxury-bg_luxury-btn-txt);
+    color: var(--body-bg_headings-cl_buttons-cl);
+    cursor: pointer;
+    transition: background-color .7s;
+}
+
 @media (min-width: 375px){
     main {
         flex-direction: row;
         width: 61.3em;
+    }
+
+    .sedans {
+        border-radius: 8px 0 0 8px;
+    }
+
+    .luxury {
+        border-radius: 0 8px 8px 0;
     }
 
 }
