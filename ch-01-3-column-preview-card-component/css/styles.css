@@ -9,9 +9,6 @@
 
 :root {
     height: 100%;
-    --title-font: "Big Shoulders Display", Arial, Helvetica, sans-serif;
-    --body-copy-font: "Lexend Deca";
-    --body-copy-color: hsla(0, 0%, 100%, 0.75);
     --body-bg_headings-cl_buttons-cl: hsl(0, 0%, 95%);
     --sedans-bg_sedans-btn-txt: #e28525;
     --suvs-bg_suvs-btn-txt: #016972;
@@ -51,24 +48,24 @@ main {
     border-radius: 0 0 8px 8px;
 }
 
-.sedans__title, .suvs__title, .luxury__title {
+.sedans h2, .suvs h2, .luxury h2 {
     margin: 1.3125em 0;
-    font-family: var(--title-font);
+    font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
     font-size: 2em;
     font-weight: 800;
     color: var(--body-bg_headings-cl_buttons-cl);
     text-transform: uppercase;
 }
 
-.sedans__pf, .suvs__pf, .luxury__pf {
-    font-family: var(--body-copy-font);
+.sedans p, .suvs p, .luxury p {
+    font-family: "Lexend Deca", Arial, Helvetica, sans-serif;
     font-size: 0.9375em;
     line-height: 1.6em;
     font-weight: 400;
-    color: var(--body-copy-color);
+    color: hsla(0, 0%, 100%, 0.75);
 }
 
-.sedans__btn, .suvs__btn, .luxury__btn {
+.sedans button, .suvs button, .luxury button {
     margin-top: 5.525em;
     width: 9.25em;
     height: 3em;
@@ -77,19 +74,19 @@ main {
     border-radius: 1.5em;
 }
 
-.sedans__btn {
+.sedans button {
     color: var(--sedans-bg_sedans-btn-txt);
 }
 
-.suvs__btn {
+.suvs button {
     color: var(--suvs-bg_suvs-btn-txt);
 }
 
-.luxury__btn {
+.luxury button {
     color: var(--luxury-bg_luxury-btn-txt);
 }
 
-.sedans__btn:hover {
+.sedans button:hover {
     border: 2px solid var(--body-bg_headings-cl_buttons-cl);
     background: var(--sedans-bg_sedans-btn-txt);
     color: var(--body-bg_headings-cl_buttons-cl);
@@ -97,7 +94,7 @@ main {
     transition: background-color .7s;
 }
 
-.suvs__btn:hover {
+.suvs button:hover {
     border: 2px solid var(--body-bg_headings-cl_buttons-cl);
     background: var(--suvs-bg_suvs-btn-txt);
     color: var(--body-bg_headings-cl_buttons-cl);
@@ -105,7 +102,7 @@ main {
     transition: background-color .7s;
 }
 
-.luxury__btn:hover {
+.luxury button:hover {
     border: 2px solid var(--body-bg_headings-cl_buttons-cl);
     background: var(--luxury-bg_luxury-btn-txt);
     color: var(--body-bg_headings-cl_buttons-cl);
