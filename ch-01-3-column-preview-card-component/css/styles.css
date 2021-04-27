@@ -15,8 +15,12 @@
     --luxury-bg_luxury-btn-txt: #00403f;
 }
 
+html {
+    height: 100%;
+}
+
 body {
-    width: 100%;
+    margin: 0 auto;
     height: 100%;
     background: var(--body-bg_headings-cl_buttons-cl);
 }
@@ -111,7 +115,13 @@ main {
 }
 
 @media (min-width: 375px){
+    body {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
     main {
+        margin: 0 auto;
         flex-direction: row;
         width: 61.3em;
     }
