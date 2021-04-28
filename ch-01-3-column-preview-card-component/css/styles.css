@@ -52,6 +52,24 @@ main {
     border-radius: 0 0 8px 8px;
 }
 
+.sedans h2::before {
+   content: url(../images/icon-sedans.svg); 
+   display: block;
+   padding-bottom: 1.25em;
+}
+
+.suvs h2::before {
+    content: url(../images/icon-suvs.svg);
+    display: block;
+    padding-bottom: 1.25em;
+}
+
+.luxury h2::before {
+    content: url(../images/icon-luxury.svg);
+    display: block;
+    padding-bottom: 1.25em;
+}
+
 .sedans h2, .suvs h2, .luxury h2 {
     margin: 1.3125em 0;
     font-family: "Big Shoulders Display", Arial, Helvetica, sans-serif;
