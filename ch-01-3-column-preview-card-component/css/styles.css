@@ -8,15 +8,10 @@
 }
 
 :root {
-    height: 100%;
     --body-bg_headings-cl_buttons-cl: hsl(0, 0%, 95%);
     --sedans-bg_sedans-btn-txt: #e28525;
     --suvs-bg_suvs-btn-txt: #016972;
     --luxury-bg_luxury-btn-txt: #00403f;
-}
-
-html {
-    height: 100%;
 }
 
 body {
