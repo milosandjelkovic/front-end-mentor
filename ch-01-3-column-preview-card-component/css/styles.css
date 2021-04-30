@@ -15,17 +15,17 @@
 }
 
 body {
-    margin: 0 auto;
-    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
     background: var(--body-bg_headings-cl_buttons-cl);
 }
 
 main {
     display: flex;
     flex-direction: column;
-    margin: 0 auto;
-    padding: 3em 0;
-    width: 90%;
+    margin: 0 3em;
 }
 
 .sedans, .suvs, .luxury {
