@@ -18,14 +18,15 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin: 3em;
     height: 100vh;
     background: var(--body-bg_headings-cl_buttons-cl);
 }
 
 main {
     display: flex;
-    flex-direction: column;
-    margin: 0 3em;
+    flex-direction: row;
+    width: 80%;
 }
 
 .sedans, .suvs, .luxury {
@@ -35,7 +36,7 @@ main {
 
 .sedans {
     background: var(--sedans-bg_sedans-btn-txt);
-    border-radius: 8px 8px 0 0;
+    border-radius: 8px 0 0 8px;
 }
 
 .suvs {
@@ -44,7 +45,7 @@ main {
 
 .luxury {
     background: var(--luxury-bg_luxury-btn-txt);
-    border-radius: 0 0 8px 8px;
+    border-radius: 0 8px 8px 0;
 }
 
 .sedans h2::before {
@@ -127,24 +128,25 @@ main {
     transition: background-color .7s;
 }
 
-@media (min-width: 375px){
+@media (max-width: 400px) {
     body {
-        display: flex;
-        justify-content: center;
-        align-items: center;
+        margin: 2em;
     }
+}
+
+@media (max-width: 960px){
     main {
-        margin: 0 auto;
-        flex-direction: row;
-        width: 61.3em;
+        flex-direction: column;
+        width: 100%;
     }
 
     .sedans {
-        border-radius: 8px 0 0 8px;
+        border-radius: 8px 8px 0 0;
+    }
+    
+    .luxury {
+        border-radius: 0 0 8px 8px;
     }
 
-    .luxury {
-        border-radius: 0 8px 8px 0;
-    }
 
 }
